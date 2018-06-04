@@ -1,0 +1,207 @@
+@media screen and (max-width: 1069px) {
+	.container, .wrapper{
+		width: 100%;
+		max-width: 768px;
+		margin: auto;
+		padding: 0 10px;
+	}
+
+	.hero .swish{
+		display: none;
+	}
+
+	.header-info .row > *{
+		margin: 10px 0;
+	}
+	.header-info .flex{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.logo{
+		width: 40%;
+	}
+
+	.header-text{
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+
+		order: 3;
+	}
+
+	.search{
+		width: 50%;
+		order: 1;
+	}
+	
+	.info .flex{
+		max-width: 600px;
+		margin: auto;
+		flex-wrap: wrap;
+
+		> *{
+			width: 50%;
+		}
+	}
+
+	.review-item{
+		max-width: 30%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.search{
+		max-width: 200px;
+	}
+
+	.wrapper{
+		flex-wrap: wrap;
+
+		> *{
+			width: 100%;
+		}
+
+		aside{
+			order: 2;
+		}
+
+		.content{
+			margin-bottom: 20px;
+			order: 1;
+		}
+
+		aside{
+			margin: auto;
+		}
+	}
+
+	.review .row{
+		flex-wrap: wrap;
+	}
+
+	.review-item{
+		width: 50%;
+		max-width: 45%;
+		margin: 10px;
+	}
+
+	.scroll-title{
+		font-size: 20px;
+	}
+
+	.scroll-inner{
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 639px) {
+
+	.hamburger{
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 40px;
+		background: url('../img/hamburger.png') no-repeat center center / cover;
+		width: 36px;
+		height: 22px;
+	}
+
+	h1{
+		font-size: 28px;
+		text-align: center;
+	}
+
+	.nav{
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		right: 20px;
+		top: 80px;
+		background: #fff;
+		width: 270px;
+		box-shadow: 1px 2px 5px rgba(0,0,0,.3);
+
+		li{
+			padding: 10px;
+			width: 100%;
+		}
+
+		li a{
+			display: block;
+			width: 100%;
+			font-size: 18px;
+			text-shadow: 2px 0 2px rgba(0, 0, 0, 0);
+			background: transparent;
+			color: #000;
+			border-radius: 0;
+
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+
+	.search{
+		display: none;
+	}
+
+	.header-text{
+		font-size: 20px;
+	}
+
+	.info .item{
+		max-width: 210px;
+	}
+
+	legend img{
+		max-width: 120px;
+	}
+
+	.review-item{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.scroll-title{
+		min-width: 300px;
+	}
+	.pre-footer .flex{
+		flex-wrap: wrap;
+	}
+	.pre-footer .col{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+}
+
+@media screen and (max-width: 479px) {
+	.logo{
+		width: 100%;
+	}
+
+	.info .flex > *{
+		width: 100%;
+	}
+
+	.info .item{
+		max-width: 320px;
+		margin: auto;
+	}
+
+	.scroll-title{
+		min-width: 200px;
+		font-size: 18px;
+		padding: 0 10px;
+	}
+
+	.scroll-show{
+		padding: 0 20px;
+		bottom: -10px;
+	}
+
+	.pre-footer .col a{
+		font-size: 14px;
+	}
+}

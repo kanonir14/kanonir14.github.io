@@ -1,0 +1,220 @@
+// btn
+
+.btn{
+	display: inline-block;
+	min-width: 190px;
+	margin: 30px 0;
+	padding: 20px 40px;
+	font-family: $sans-bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+	text-decoration: none;
+	cursor: pointer;
+	transition: all .15s ease-out;
+
+	&-white{
+		background: $color-white;
+		color: $color-blue;
+	}
+
+	&-green{
+		background: $color-green;
+		color: $color-white;
+	}
+
+	&:hover{
+		position: relative;
+		top: -3px;
+		box-shadow: 1px 5px 3px rgba(0,0,0,0.2);
+	}
+}
+
+
+// links
+
+.link{
+	font-family: $sans-bold;
+	text-decoration: none;
+
+	&-blue{
+		color: $color-blue;
+	}
+
+}
+
+// form
+
+.order-form{
+	width: 100%;
+
+	.form-group{
+		position: relative;
+		margin: 0 0 20px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		span{
+			margin-left: 25px;
+			position: relative;
+			top: -3px;
+			color: rgba(11,25,45,.3);
+		}
+	}
+	
+	input[type="text"], input[type="email"] {
+		width: 100%;
+		min-height: 50px;
+		padding: 10px 15px;
+		border-radius: 8px;
+		border: 1px solid $color-form-border;
+		font-family: $sans;
+		font-size: 16px;
+		color: rgba(11,25,45,.3);
+		-webkit-appearance: none;
+		appearance: none;
+	}
+
+	button{
+		position: absolute;
+		right: 4px;
+		top: 4px;
+		bottom: 4px;
+		width: 100px;
+		height: 42px;
+		padding: 0 10px;
+		background: $color-blue-lighter;
+		font-family: $sans-bold;
+		color: $color-white;
+		text-transform: uppercase;
+		border-radius: 6px;
+
+	}
+}
+
+#check{
+	position: relative;
+	display: none;
+
+	&:checked + label{
+		background: url('../img/check.png');
+		border: 0;
+	}
+
+	&+label{
+		position: absolute;
+		display: block;
+		width: 18px;
+		height: 18px;
+		background: transparent;
+		border: 2px solid $color-blue;
+		border-radius: 4px;		
+	}
+}
+
+
+// sprite
+
+.sprite{
+	margin-top: 5px;
+	margin-right: 5px;
+	display: inline-block;
+	background: url('../img/satisfaction-sprite.svg') no-repeat;
+}
+
+.star{
+	width: 153px;
+	height: 17px;
+	background-position: 100% 0;
+	background-size: 69%;
+}
+
+.visa{
+	width: 37px;
+	height: 27px;
+	background-position: 8.7% 61%;
+	background-size: 273%;
+}
+
+.mastercard{
+	width: 40px;
+	height: 27px;
+	background-position: 5.7% 100%;
+	background-size: 252%;
+}
+
+.pci-dss{
+	width: 55px;
+	height: 27px;
+	background-position: 10% 23%;
+	background-size: 340%;
+}
+
+.fb{
+	width: 25px;
+	height: 26px;
+	background-position: -90px -90px;
+	background-size: 691%;
+
+	&:hover{
+		background-position: -90px -117px;
+	}
+}
+
+.twitter{
+	width: 25px;
+	height: 26px;
+	background-position: -148px -90px;
+	background-size: 693%;
+
+	&:hover{
+		background-position: -148px -117px;
+	}
+}
+
+.google{
+	width: 25px;
+	height: 26px;
+	background-position: -119px -90px;
+	background-size: 693%;
+
+	&:hover{
+		background-position: -119px -117px;
+	}
+}
+
+.hamburger{
+	position: absolute;
+	left: 100px;
+	top: -13px;
+	width: 36px;
+	height: 22px;
+	background-image: url('../img/nav.png');
+	cursor: pointer;
+	background-size: cover;
+	z-index: 100;
+}
+
+.triangle{
+	position: absolute;
+	right: -3px;
+	top: 10px;
+	width: 7px;
+	height: 6px;
+	background: url('../img/triangle.png') no-repeat;
+	cursor: pointer;
+}
+
+.arrow{
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	left: 5px;
+	background: url('../img/arrow-form.svg') no-repeat;
+	width: 14px;
+	height: 12px;
+
+}

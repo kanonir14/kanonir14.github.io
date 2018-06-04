@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Картонье</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="bower_components/remodal/dist/remodal.css">
+	<link rel="stylesheet" href="bower_components/remodal/dist/remodal-default-theme.css">
+	<meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+<body>
+
+<nav class="nav">
+	<div class="container flex flex-between">
+		<div class="logo">
+			<a href="#">Картоньє</a>
+		</div>
+		<ul class="flex flex-end">
+			<li><a href="#"><i class="icon icon-fb"></i>Face</a></li>
+			<li><a href="#"><i class="icon icon-instagram"></i>Insta</a></li>
+			<li class="nav__telephone"><a href="tel:+380974568412"><i class="icon icon-tel"></i>097 456 84 12</a></li>
+			<li><a href="#modal" data-remodal-target="modal">Меню</a></li>
+			<li><button class="hamburger trigger" data-remodal-target="modal"></button></li>
+
+		</ul>
+	</div>
+</nav>
+
+<!-- Слайдер -->
+<section class="slider">
+	<div class="container-fluid">
+		<!-- slider img -->
+		<div class="owl-carousel main-slider">
+			<img src="img/slider-1.jpg" alt="">
+			<img src="img/slider-2.jpg" alt="">
+		</div>
+		<p class="slider-title">Флористика <span>з любовю</span></p>
+		<a class="catalog-link scroll" href="#catalogs">каталог послуг</a>
+	</div>
+</section>
+
+<section class="grid" id="catalogs">
+	<div class="container-fluid">
+		<div class="flex flex-wrap">
+			<a href="#">
+				<div class="grid_info">
+					<h3>Фотозони</h3>
+					<span>Переглянути</span>
+				</div>
+			</a>
+			<a href="#">
+				<div class="grid_info">
+					<h3>Оформлення вітрин</h3>
+					<span>Переглянути</span>
+				</div>
+			</a>
+			<a href="#">
+				<div class="grid_info">
+					<h3>Корпоративні подарунки</h3>
+					<span>Переглянути</span>
+				</div>
+			</a>
+			<a href="#">
+				<div class="grid_info">
+					<h3>Весільне оформлення</h3>
+					<span>Переглянути</span>
+				</div>
+			</a>
+			<a href="#">
+				<div class="grid_info">
+					<h3>Новорічний декор та оформлення</h3>
+					<span>Переглянути</span>
+				</div>
+			</a>
+			<a href="#">
+				<div class="grid_info">
+					<h3>Весільні аксесуари</h3>
+					<span>Переглянути</span>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- информация -->
+<section class="info">
+	<div class="container">
+		<h2 class="info-title">Картоньє</h2>
+		<div class="info__content">
+			<p>"Картоньє" ательє декору - це творчий тандем з креативним підходом, який було засновано у 2014 році 21 жовтня. Наше ательє займається втіленням креативних ідей у виробах ручної роботи для Ваших особливих дат, декору, подарунків , фотозон та аксесуарів. Виконуємо як корпоративні так і індивідуальні замовлення, з особливим підходом до кожного клієнта та його побажанням. Оформлення весіль, весільні аксесуари, робота з живими квітами надихають нас для створення краси. </p>
+			<p>Кожна подія у житті є особливою, а додати їй шарму та краси в декорі чи аксесуарах допоможе Вам Картоньє. Ательє декору працює з Вашими фантазіями, які з нашою допомогою стають реальністю. Ми створюємо декор для Вашого дому, оформляємо приміщення та вітрини, дитячі кімнати, а також виготовляємо декорації під замовлення та креативні вироби, подарунки ручної роботи.</p>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<ul class="social flex flex-center">
+			<li><a href="#"><img src="img/fb_cube.png" alt=""></a></li>
+			<li><a href="#"><img src="img/insta_cube.png" alt=""></a></li>
+		</ul>
+		<ul class="links flex flex-center">
+			<li><a href="mailto:kartonye@gmail.com"><i class="icon icon-mail"></i>kartonye@gmail.com</a></li>
+			<li><a href="tel:+38097 456 12 45"><i class="icon icon-tel"></i>097 456 12 45</a></li>
+			<li><i class="icon icon-gps"></i>Лемківська 15, Львів</li>
+		</ul>
+	</div>
+</footer>
+
+<!-- popup navigation -->
+<div class="remodal" data-remodal-id="modal">
+	<button data-remodal-action="close" class="remodal-close">закрити</button>
+	<div class="navigation">
+		<div class="container">
+			<ul class="main-nav flex flex-between">
+				<li><a href="#">Головна</a></li>
+				<li>
+					<a href="#">Продукція</a>
+					<ul class="submenu">
+						<li><a href="#">Весільна флористика</a></li>
+						<li><a href="#">Фотозони</a></li>
+						<li><a href="#">Вітрини</a></li>
+						<li><a href="#">Корпоративні подарунки</a></li>
+						<li><a href="#">Новорічний декор та оформлення</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Про нас</a></li>
+				<li><a href="#">Контакти</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>	
+<script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="bower_components/remodal/dist/remodal.min.js"></script>
+<script src="js/common.js"></script>	
+</body>
+</html>

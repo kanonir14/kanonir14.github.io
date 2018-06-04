@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSansRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Augustina";
+  src: url("../fonts/Augustinascript-Cursive.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MonotypeCorsiva";
+  src: url("../fonts/MonotypeCorsiva.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* lora-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lora-v12-cyrillic_latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Lora Regular'), local('Lora-Regular'),
+       url('../fonts/lora-v12-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lora-v12-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lora-v12-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lora-v12-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lora-v12-cyrillic_latin-regular.svg#Lora') format('svg'); /* Legacy iOS */
+}
+

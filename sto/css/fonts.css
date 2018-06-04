@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/CenturyGothic.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto_condensed";
+    src: url("../fonts/RobotoCondensedRegular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: "ClinicaPro";
+    src: url("../fonts/ClinicaPro-Regular.otf") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

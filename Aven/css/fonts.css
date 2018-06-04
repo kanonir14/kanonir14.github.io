@@ -1,0 +1,22 @@
+
+@font-face {
+    font-family: "Hind";
+    src: url("../fonts/Hind-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Arizonia";
+    src: url("../fonts/Arizonia-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}

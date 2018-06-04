@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Картонье</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="bower_components/remodal/dist/remodal.css">
+	<link rel="stylesheet" href="bower_components/remodal/dist/remodal-default-theme.css">
+	<link rel="stylesheet" href="bower_components/fancybox/dist/jquery.fancybox.min.css">
+	<meta content="initial-scale=1, width=device-width" name="viewport">
+</head>
+<body>
+
+<nav class="nav">
+	<div class="container flex flex-between">
+		<div class="logo">
+			<a href="#">Картоньє</a>
+		</div>
+		<ul class="flex flex-end">
+			<li><a href="#"><i class="icon icon-fb"></i>Face</a></li>
+			<li><a href="#"><i class="icon icon-instagram"></i>Insta</a></li>
+			<li class="nav__telephone"><a href="tel:+380974568412"><i class="icon icon-tel"></i>097 456 84 12</a></li>
+			<li><a href="#modal" data-remodal-target="modal">Меню</a></li>
+			<li><button class="hamburger trigger" data-remodal-target="modal"></button></li>
+
+		</ul>
+	</div>
+</nav>
+
+<!-- категории и просмотр работ -->
+<section class="contacts">
+	<div class="container">
+		<h1>Контакти</h1>
+		<!-- contacts -->
+		<ul class="links flex flex-center">
+			<li><a href="mailto:kartonye@gmail.com"><i class="icon icon-mail"></i>kartonye@gmail.com</a></li>
+			<li><a href="tel:+38097 456 12 45"><i class="icon icon-tel"></i>097 456 12 45</a></li>
+			<li><i class="icon icon-gps"></i>Лемківська 15, Львів</li>
+		</ul>
+		<ul class="social flex flex-center">
+			<li><a href="#"><img src="img/fb_cube.png" alt=""></a></li>
+			<li><a href="#"><img src="img/insta_cube.png" alt=""></a></li>
+		</ul>
+	</div>
+	
+	<!-- Форма связи -->
+	<div class="form">
+		<h4>Форма зворотнього зв'язку</h4>
+		<p class="form-text"> Якщо у вас виникли додаткові запитання, то ви можете звернутись до нас по телефону або за формою поданою нижче</p>
+
+		<form class="contact-form" action="action">
+			<div class="form-group">
+				<input type="text" placeholder="Як вас звати?">	
+			</div>
+			<div class="form-group">
+				<input type="email" placeholder="Ваш контактний телефон">
+			</div>
+			<div class="form-group">
+				<button type="submit"><span>Надіслати</span></button>
+			</div>
+		</form>
+	</div>
+
+</section>
+
+	
+
+<!-- popup navigation -->
+<div class="remodal" data-remodal-id="modal">
+	<button data-remodal-action="close" class="remodal-close">закрити</button>
+	<div class="navigation">
+		<div class="container">
+			<ul class="main-nav flex flex-between">
+				<li><a href="#">Головна</a></li>
+				<li>
+					<a href="javascript:;">Продукція</a>
+					<ul class="submenu">
+						<li><a href="#">Весільна флористика</a></li>
+						<li><a href="#">Фотозони</a></li>
+						<li><a href="#">Вітрини</a></li>
+						<li><a href="#">Корпоративні подарунки</a></li>
+						<li><a href="#">Новорічний декор та оформлення</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Про нас</a></li>
+				<li><a href="#">Контакти</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>	
+<script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="bower_components/remodal/dist/remodal.min.js"></script>
+<script src="bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/common.js"></script>	
+</body>
+</html>

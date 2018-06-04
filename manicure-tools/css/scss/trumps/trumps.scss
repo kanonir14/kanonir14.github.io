@@ -1,0 +1,113 @@
+@media screen and (max-width: 1099px) {
+	
+	h1{
+		font-size: 45px;
+	}
+
+	.container{
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	header{
+		height: 600px;
+	}
+	nav {
+		padding: 20px 0;
+		.container{
+			@include justify-content(flex-end);
+		}
+	}
+	.logo{
+		display: none;
+	}
+
+	.price{
+
+		.row{
+			@include flex-wrap(wrap);
+			@include justify-content(center);
+			@include align-items(inherit);
+		}
+
+		&-col{
+			width: 100%;
+			max-width: 48%;
+			margin: 20px 1%;
+		}
+	}
+	.grid__item{
+		width: 33%;
+		margin: 1px;
+		min-height: 25vh;
+		max-height: 25vh;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	h1{
+		font-size: 30px;
+	}
+
+	h2{
+		font-size: 30px;
+	}
+	nav{
+		display: none;
+	}
+	header{
+		height: auto;
+		padding-bottom: 100px;
+	}
+	.header-title{
+		padding-top: 15%;
+		.btn{
+			display: none;
+		}
+	}
+	.about{
+		p{
+			text-align: justify;
+		}
+	}
+	.price-col {
+    	width: 100%;
+    	max-width: 315px;
+	}
+	.grid__item{
+		width: 49%;
+		margin: 1px;
+		min-height: 155px;
+		max-height: 155px;
+		
+		img{
+			min-height: auto;
+		}
+	}
+
+	footer .container{
+		@include flex-direction(column);
+		
+		#map{
+			display: none;
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	h1{
+		font-size: 24px;
+	}
+	h4{
+		font-size: 15px;
+	}
+	.grid__item {
+	    width: 49%;
+	    margin: 1px;
+	    min-height: 90px;
+	    max-height: 90px;
+	    img{
+	    	width: 100%;
+	    	height: auto;
+	    }
+	}
+}

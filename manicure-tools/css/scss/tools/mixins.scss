@@ -1,0 +1,43 @@
+@mixin display($flex) {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: $flex;
+}
+
+@mixin flex-direction($var) {
+	-webkit-flex-direction: $var;
+    flex-direction: $var;
+}
+
+@mixin justify-content($var) {
+	-webkit-justify-content: $var;
+	    justify-content: $var;
+}
+
+@mixin align-items($var){
+	-webkit-align-items: $var;
+	align-items: $var;
+}
+@mixin flex-wrap($var){
+	-webkit-flex-wrap: $var;
+	flex-wrap: $var;
+}
+
+// grid
+@mixin grid($col, $mgn) {
+	float: left;
+	margin-right: $mgn;
+	margin-bottom: $mgn;
+	width: ((100% - (($col - 1) * $mgn)) / $col);
+	&:nth-child(#{$col}n) {
+		margin-right: 0px;
+	}
+}
+
+// transition
+@mixin transition {
+	-webkit-transition: all .25s ease-in;
+	transition: all .25s ease-in;
+}

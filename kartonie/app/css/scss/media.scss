@@ -1,0 +1,376 @@
+@media screen and (max-width: 1439px) {
+	.container{
+		width: 1140px;
+	}
+}
+
+@media screen and (max-width: 1139px) {
+	.container{
+		width: 100% !important;
+		max-width: 768px;
+		padding: 0 10px;
+ 	}
+
+ 	.logo{
+ 		margin-left: 14%;
+ 	}
+
+ 	.category-header{
+ 		min-height: auto;
+ 	}
+
+ 	.category-content{
+ 		margin-top: -90px;
+ 	}
+
+ 	.category-header h1{
+ 		font-size: 100px;
+ 	}
+
+ 	.gallery-grid{
+ 		justify-content: space-around;
+
+ 		.item{
+	 		max-width: 48%;
+	 		max-height: 300px;
+	 	}
+
+ 	}
+
+ 	.info{
+		font-size: 16px;
+
+		&-textbox{
+			max-width: 47%;
+			line-height: 1.8;
+			text-align: justify;
+		}
+ 	}
+
+ 	.footer{
+ 		padding-top: 40px;
+ 		padding-bottom: 0;
+ 		min-height: 300px;
+
+ 		&:after{
+ 			width: 200px;
+ 			height: 154px;
+ 			right: -44px;
+			top: 27px;
+ 		}
+
+ 		&:before{
+ 			width: 200px;
+			height: 175px;
+			left: -40px;
+			bottom: -30px;
+ 		}
+ 	}
+
+ 	.service .row{
+ 		flex-direction: column;
+ 	}
+
+ 	.service .item{
+ 		max-width: 60%;
+ 		margin: 20px auto;
+ 	}
+
+ 	.counts .item{
+ 		width: 32%;
+		height: auto;
+		padding: 25px;
+
+ 		.num{
+ 			font-size: 90px;
+ 		}
+ 	}
+
+ 	.bottom-slider__text{
+ 		right: 70px;
+ 		bottom: 70px;
+ 		font-size: 56px;
+ 		max-width: 400px;
+ 	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.submenu{
+		display: none;
+	}
+
+	.main-nav{
+		flex-direction: column;
+		justify-content: flex-start;
+		padding: 40px 20px;
+		text-align: left;
+
+		> li:hover{
+
+			.submenu{
+				display: block;
+				font-size: 14px;
+			}
+		}
+	}
+
+
+
+	
+
+	.remodal-close{
+		z-index: 99;
+	}
+
+	.main-nav > li > a{
+		font-size: 57px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	h3{
+		font-size: 44px;
+		line-height: 1;
+	}
+
+	.slider-title{
+		width: 100%;
+		max-width: 320px;
+		font-size: 68px;
+		padding-right: 40px;
+	}
+
+
+	.tabs-title{
+		flex-direction: column;
+		border-bottom: 0;
+		margin-bottom: 10px;
+	}
+
+	.ui-tabs-active{
+		border-bottom: 0px;
+	}
+
+	.slider img{
+		width: auto !important;
+		height: 100vh !important;
+	}
+
+	.slider-title{
+		width: 450px;
+	}
+
+	.grid{
+		height: auto;
+	}
+	.grid .flex{
+		width: 100%;
+
+		a{
+			width: 50%;
+			height: 300px;
+		}
+	}
+
+	.nav ul li a{
+		font-size: 0;
+	}
+
+	.nav ul li a[href*="tel"]{
+		font-size: 0;
+	}
+
+	.nav ul li{
+		padding: 0 5px;
+	}
+
+	.nav:after{
+		width: 105px;
+		height: 105px;
+	}
+
+	.about h1{
+		font-size: 100px;
+	}
+
+	.counts{
+		padding: 30px 0;
+	}
+
+	.counts .flex{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.counts .item{
+		margin: 10px auto;
+		width: 280px;
+		height: 280px;
+	}
+
+	.counts .item .num {
+	    font-size: 108px;
+	    line-height: .7;
+	}
+
+	.links li{
+		margin: 0 15px;
+	}
+
+	.bottom-slider img{
+		width: auto !important;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	.category-header h1{
+		padding: 60px 0 140px;
+		font-size: 80px;
+	}
+
+	.service .item{
+		max-width: 360px;
+	}
+
+	.service .item-gold:after{
+		width: 100px;
+		height: 100px;
+	}
+
+	.social li{
+		margin-bottom: 20px;
+	}
+
+	.links{
+		flex-direction: column;
+		text-align: center;
+		max-width: 300px;
+		margin: auto;
+
+		li{
+			padding: 8px 0;
+		}
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	h5{
+		font-size: 60px;
+	}
+
+	.category-header h1{
+		font-size: 60px;
+	}
+
+	.info .flex{
+		flex-direction: column;
+	}
+
+	.info-textbox{
+		max-width: 100%;
+	}
+
+	.gallery-grid .item{
+		max-width: 100%;
+		max-height: 1000px;
+		margin: 5px 0;
+	}
+
+	.nav{
+		padding: 10px 0;
+	}
+
+	.nav:after{
+		width: 80px !important;
+	}
+	.logo{
+		padding: 5px 0;
+	}
+	.logo a{
+		font-size: 24px;
+	}
+
+	.main-nav > li > a{
+		font-size: 47px;
+	}
+
+	.category-header{
+		background-size: cover, cover;
+	}
+
+	.category-header h1{
+		line-height: 1;
+	}
+
+	.footer:after{
+		display: none;
+	}
+
+	.footer:before{
+		display: none;
+	}
+
+	.links{
+		margin: 20px auto;
+	}
+
+	.footer .icon{
+		display: block;
+		float: none;
+		margin: auto !important;
+	}
+
+	.service-text{
+		max-width: 100%;
+		font-size: 16px;
+	}
+
+	.grid{
+		background: transparent;
+	}
+	.grid .flex{
+		width: 100%;
+
+		a{
+			width: 100%;
+			max-height: 300px;
+		}
+	}
+
+	.about h1{
+		font-size: 	70px;
+		line-height: .7;
+		margin-bottom: 50px;
+	}
+
+	.bottom-slider__text{
+		right: 10px;
+		font-size: 38px;
+	}
+
+	.contacts h1{
+		font-size: 70px;
+	}
+
+	.contacts .links li i{
+		display: block;
+		float: none;
+		margin: 0 auto 10px;
+	}
+
+	.form{
+		padding: 0 10px;
+	}
+
+	.contacts h1{
+		padding: 50px 0;
+	}
+
+
+}

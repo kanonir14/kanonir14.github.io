@@ -1,0 +1,1290 @@
+@import "_var.scss";
+@import "_mixins.scss";
+@import "normalize.scss";
+@import "fonts.scss";
+@import "components.scss";
+
+
+
+h4{
+	position: relative;
+	margin-bottom: 50px;
+	font-family: $pdf;
+	font-weight: 300;
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: -.6px;
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		width: 200px;
+		height: 3px;
+		background: $color-yellow;
+		transform: translateX(-50%);
+	}
+}
+
+h5{
+	position: relative;
+	margin-bottom: 20px;
+	font-family: $pdf;
+	font-size: 28px;
+	color: $color-black;
+	text-align: center;
+	text-transform: uppercase;
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 50%;
+		bottom: -3px;
+		width: 120px;
+		height: 3px;
+		background: $color-blue;
+		transform: translateX(-50%);
+	}
+}
+
+h6{
+	position: relative;
+	font-family: $pdf;
+	font-size: 24px;
+	color: $color-black;
+	text-transform: uppercase;
+	letter-spacing: -.6px;
+}
+
+.flex{
+	@include display(flex);
+}
+.flex-center{
+	@include justify-content(center);
+}
+.flex-between{
+	@include justify-content(space-between);
+}
+.flex-around{
+	@include justify-content(space-around);
+}
+.flex-items{
+	@include align-items(center);
+}
+.flex-column{
+	@include flex-direction(column);
+}
+.flex-wrap{
+	@include flex-wrap(wrap);
+}
+
+.btn-wrap{
+	text-align: center;
+}
+
+.blue{
+	color: $color-blue;
+}
+
+.orange{
+	color: $color-yellow;
+}
+
+
+// header
+.header{
+	position: relative;
+	padding: 100px 0;
+	background: url('../img/header.jpg') no-repeat center top / cover;
+	height: 850px;
+
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -80px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 80px;
+		background: url('../img/shadow.png') no-repeat center top;
+		pointer-events: none;
+	}
+
+	.container{
+		max-width: 940px;
+		margin: auto;
+		overflow: inherit;
+	}
+
+	h1{
+		position: relative;
+		top: -60px;
+		width: 100%;
+		max-width: 970px;
+		margin: auto;
+		font-family: $pdf;
+		font-weight: 100;
+		font-size: 120px;
+		color: $color-white;
+		text-align: center;
+		line-height: 1;
+
+		span{
+			display: block;
+			font-size: 150px;
+			font-weight: 300;
+			line-height: .9;
+			color: $color-yellow;
+		}
+	}
+
+	&-title{
+		position: relative;
+		margin-bottom: 80px;
+
+		&:before{
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 4px;
+			height: 100%;
+			background: $color-yellow;
+		}
+
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 4px;
+			height: 100%;
+			background: $color-yellow;
+
+		}
+
+		.arrow-left{
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			pointer-events: none;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 5%;
+				height: 4px;
+				background: $color-yellow;
+			}
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 5%;
+				height: 4px;
+				background: $color-yellow;
+			}
+		}
+
+		.arrow-right{
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			pointer-events: none;
+
+			&:before{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 30%;
+				height: 4px;
+				background: $color-yellow;
+			}
+
+			&:after{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 30%;
+				height: 4px;
+				background: $color-yellow;
+			}
+		}
+	}
+}
+
+// cooperation
+
+.coop{
+	position: relative;
+	padding: 40px 0;
+	background: url('../img/coop-bg.jpg') no-repeat center top / cover;
+	height: 640px;
+	font-family: $pdf;
+
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -80px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 80px;
+		background: url('../img/shadow.png') no-repeat center top;
+		pointer-events: none;
+	}
+
+	h3{
+		text-align: center;
+		font-size: 50px;
+		line-height: 1;
+		color: $color-white;
+
+		span{
+			display: block;
+			text-align: center;
+		}
+	}
+
+	h1{
+		position: relative;
+		top: -45px;
+		width: 100%;
+		max-width: 970px;
+		margin: auto;
+		font-family: $pdf;
+		font-weight: 100;
+		font-size: 88px;
+		color: $color-white;
+		text-align: center;
+		line-height: 1;
+
+		span{
+			display: block;
+			font-size: 120px;
+			font-weight: 300;
+		}
+	}
+
+	&-title{
+		position: relative;
+		width: 100%;
+		max-width: 970px;
+		margin: 80px auto 80px;
+
+		&:before{
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 4px;
+			height: 100%;
+			background: $color-yellow;
+		}
+
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 4px;
+			height: 100%;
+			background: $color-yellow;
+
+		}
+
+		.arrow-left{
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			pointer-events: none;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 25%;
+				height: 4px;
+				background: $color-yellow;
+			}
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 25%;
+				height: 4px;
+				background: $color-yellow;
+			}
+		}
+
+		.arrow-right{
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			pointer-events: none;
+
+			&:before{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 30%;
+				height: 4px;
+				background: $color-yellow;
+			}
+
+			&:after{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 30%;
+				height: 4px;
+				background: $color-yellow;
+			}
+		}
+	}
+}
+
+.information{
+	position: relative;
+	top: -50px;
+
+	.container{
+		padding: 20px 40px;
+		overflow: inherit;
+		background: $color-white;
+		border-radius: 15px;
+		border: 2px solid $color-yellow;
+		box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+	}
+}
+
+// content
+
+.content{
+
+	h4{
+		font-size: 37px;
+		font-weight: 100;
+		text-transform: inherit;
+		margin-bottom: 5px;
+
+		&:after{
+			display: none;
+		}
+	}
+
+	h5{
+		font-family: $roboto;
+		font-weight: normal;
+		font-size: 16px;
+		color: $color-blue;
+		text-transform: inherit;
+		text-align: left;
+
+		&:after{
+			display: none;
+		}
+	}
+
+	p{
+		margin-bottom: 14px;
+	}
+
+	ul{
+		padding-left: 30px;
+
+		li{
+			position: relative;
+			margin-bottom: 14px;
+
+			&:before{
+				content: '•';
+				font-size: 25px;
+				position: absolute;
+				left: -18px;
+				color: $color-yellow;
+			}
+		}
+	}
+
+}
+
+// category
+.category{
+	position: relative;
+	padding: 40px 0;
+	background: url('../img/bg-5.jpg') no-repeat center top / cover;
+	height: 960px;
+	font-family: $pdf;
+	font-weight: 300;
+
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -80px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 80px;
+		background: url('../img/shadow.png') no-repeat center top;
+		pointer-events: none;
+	}
+
+	.container{
+		overflow: inherit;
+	}
+
+	&__left{
+		width: 60%;
+	}
+
+	&-right{
+		width: 40%;
+		padding-top: 450px;
+		text-align: right;
+		color: $color-white;
+
+		&__title{
+			font-size: 88px;
+		}
+
+		&__text{
+			font-size: 50px;
+			font-weight: 100;
+
+			span{
+				display: block;
+				font-weight: 300;
+			}
+		}
+
+	}
+
+	&__img{
+		padding-right: 20px;
+	}
+
+	&__num a{
+		font-size: 50px;
+		color: $color-black;
+		text-decoration: none;
+		line-height: 1;
+
+		span{
+			color: $color-blue;
+		}
+	}
+
+	&-text{
+		position: relative;
+		left: 200px;
+		font-size: 37px;
+		width: 100%;
+		max-width: 260px;
+
+		span{
+			font-weight: normal;
+		}
+	}
+
+	&__text + img{
+		position: relative;
+		left: -100px;
+	}
+
+	h1{
+		position: relative;
+		font-weight: 100;
+		font-size: 140px;
+		line-height: 1;
+
+		&:before{
+			content: '';
+			position: absolute;
+			right: 130px;
+			top: 30%;
+			width: 40px;
+			height: 8px;
+			background: $color-blue;
+		}
+
+		&:after{
+			content: '';
+			position: absolute;
+			right: 130px;
+			top: 30%;
+			height: 30px;
+			width: 8px;
+			background: $color-blue;
+		}
+
+		span{
+			position: relative;
+			display: block;
+			padding-left: 50px;
+			font-size: 90px;
+			font-weight: 300;
+			color: $color-yellow;
+
+			&:before{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				width: 40px;
+				height: 8px;
+				background: $color-yellow;
+			}
+
+			&:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 20%;
+				height: 30px;
+				width: 8px;
+				background: $color-yellow;
+			}
+		
+		}
+	}
+
+	.country{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		margin: 20px 0;
+
+		li{
+			float: left;
+			margin-right: 10px;
+
+			a{
+				display: block;
+				width: 28px;
+				height: 28px;
+				padding: 5px 0;
+				font-size: 14px;
+				color: $color-white;
+				text-align: center;
+				text-decoration: none;
+				background: $color-blue;
+				border-radius: 50%;
+
+				&:hover{
+					background: $color-yellow;
+					color: $color-black;
+				}
+
+			}
+
+			&:last-child{
+				font-size: 21px;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.category + .autopark h4{
+	text-align: right;
+
+	&:after{
+		left: auto;
+		right: 3%;
+		transform: translateX(0);
+	}
+}
+
+// autopark
+
+.autopark{
+	width: 100%;
+	max-width: 1170px;
+	height: 225px;
+	margin: auto;
+
+	.container{
+		position: relative;
+		top: -200px;
+		overflow: inherit;
+	}
+
+	h4{
+		color: $color-white;
+	}
+
+	.item{
+		position: relative;
+		width: 25%;
+		max-width: 270px;
+		height: 270px;
+		border-radius: 10px;
+		border: 2px solid $color-white;
+		box-shadow: 10px 0 20px rgba(0,0,0,.2);
+		overflow: hidden;
+
+		&:hover{
+			border-color: $color-yellow;
+		}
+
+		img{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: auto;
+			height: 100%;
+			transform: translate(-50%, -50%);		
+		}
+
+	}
+}
+
+// order
+
+.order{
+	padding: 30px 0;
+	background: $color-light-gray;
+
+	.item{
+		position: relative;
+		width: 33%;
+		display: flex;
+		align-items: center;
+
+		&:before{
+			position: absolute;
+			left: 50%;
+			font-family: $pdf;
+			font-weight: bold;
+			font-size: 210px;
+			color: $color-gray-light;
+		}
+
+		&:nth-child(1):before {
+			content: '1';
+		}
+
+		&:nth-child(2):before {
+			content: '2';
+		}
+		&:nth-child(3):before {
+			content: '3';
+		}
+	}
+
+	&__info{
+		position: relative;
+		font-family: $pdf;
+		font-size: 28px;
+		text-transform: uppercase;
+		z-index: 2;
+	}
+}
+
+// specific
+.specific{
+	width: 100%;
+	padding: 70px 0;
+
+	.container{
+		overflow: inherit;
+	}
+
+	.item{
+		width: 50%;
+		margin: 15px 0;
+
+		&-blue .item__img {
+			background: linear-gradient(to bottom, rgba(0,184,237,1) 0%,rgba(0,143,215,1) 100%);
+		}
+
+		&__img{
+			width: 170px;
+			height: 170px;
+			text-align: center;
+			padding: 50px 0;
+			border-radius: 8px;
+			border: 2px solid $color-white;
+			box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+			background: linear-gradient(to bottom, rgba(255,240,0,1) 0%,rgba(253,202,0,1) 100%);
+		}
+
+		&__text{
+			width: 100%;
+			max-width: 415px;
+			padding-left: 30px;
+			padding-right: 10px;
+		}
+	}
+}
+
+// Карта
+.maps{
+	padding: 20px 0;
+
+	img{
+		margin-top: 40px;
+		width: 100%;
+		height: auto;
+		user-select: none;
+	}
+
+	&__ul{
+		display: flex;
+		width: 100%;
+	}
+
+	&__list{
+		width: 33%;
+
+		> li{
+			position: relative;
+			padding-left: 25px;
+			font-family: $pdf;
+			font-size: 28px;
+			line-height: 1.7;
+			text-transform: uppercase;
+			cursor: pointer;
+
+			&:hover{
+				color: $color-blue;
+			}
+
+			&:before{
+				content: '•';
+				position: absolute;
+				left: 0;
+				color: $color-yellow;
+			}
+		}
+
+		.sub-menu{
+			display: none;
+			position: relative;
+			color: $color-black;
+			font-size: 21px;
+			line-height: 1.4;
+			padding-left: 20px;
+
+			li:before{
+				content: '•';
+				position: absolute;
+				left: 0;
+				color: $color-blue;
+			}
+
+		}
+	}
+}
+
+
+// service
+.service{
+	position: relative;
+	padding: 40px 0;
+	background: url('../img/bg-2.jpg') no-repeat center top / cover;
+	height: 400px;
+
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -80px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 80px;
+		background: url('../img/shadow.png') no-repeat center top;
+		pointer-events: none;
+	}
+
+	h4{
+		color: $color-white;
+	}
+
+	&__list{
+		background: $color-yellow;
+		font-family: $pdf;
+		font-weight: 300;
+		font-size: 22px;
+		text-transform: uppercase;
+		color: $color-black;
+		border-radius: 8px;
+		overflow: hidden;
+
+		li{
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 33.3333%;
+			height: 90px;
+
+			span{
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 50px;
+				display: block;
+				font-size: 56px;
+				text-align: center;
+				font-weight: bold;
+				line-height: 90px;
+			}
+
+			p{
+				margin-left: 105px;
+				padding-right: 15px;
+			}
+
+			&:nth-child(odd) span{
+				background: $color-black;
+				color: $color-white;
+
+				&:after{
+					content: '';
+					position: absolute;
+					left: 49px;
+					border: 45px solid transparent;
+					border-left: 50px solid $color-black; 
+				}
+			}
+			&:nth-child(even){
+				background: $color-black;
+				color: $color-white;
+				span{
+					background: $color-yellow;
+					color: $color-black;
+
+					&:after{
+						content: '';
+						position: absolute;
+						left: 49px;
+						border: 45px solid transparent;
+						border-left: 50px solid $color-yellow; 
+					}
+				}
+			} 
+		}
+
+	}
+}
+
+// eva
+.eva{
+	padding: 50px 0;
+
+	.container{
+		overflow: inherit;
+	}
+
+	&__text{
+		padding: 20px;
+		border-radius: 20px;
+		border: 2px solid $color-yellow;
+		box-shadow: 10px 10px 20px rgba(0,0,0,.2);
+
+		p{
+			margin-bottom: 10px;
+		}
+	}
+}
+
+// info
+
+.info{
+	position: relative;
+	background: url('../img/bg-4.jpg') no-repeat center top / cover;
+	padding: 30px 0;
+
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -80px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 80px;
+		background: url('../img/shadow.png') no-repeat center top;
+		pointer-events: none;
+		z-index: 4;
+	}
+
+	h4{
+		color: $color-white;
+
+		span{
+			color: $color-yellow;
+		}
+	}
+
+	.item{
+		position: relative;
+		width: 33%;
+		max-width: 370px;
+		padding: 100px 20px 20px;
+		background: $color-white;
+		border-radius: 8px;
+		box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+		border: 1px solid $color-yellow;
+
+		img{
+			position: absolute;
+			left: 50%;
+			top: -50px;
+			transform: translateX(-50%);
+		}
+	}
+
+}
+
+// call
+
+.call{
+	position: relative;
+
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -80px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 80px;
+		background: url('../img/shadow.png') no-repeat center top;
+		pointer-events: none;
+		opacity: .3;
+	}
+
+	&__img{
+		width: 45%;
+	}
+	&__info{
+		width: 55%;
+		padding: 90px 0;
+	}
+
+	&-title{
+		font-family: $pdf;
+		font-size: 78px;
+		font-weight: 300;
+		color: $color-yellow;
+		text-transform: uppercase;
+	}
+
+	&-descr{
+		font-family: $pdf;
+		font-size: 50px;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	&__tel{
+		width: 100%;
+	}
+
+	&__icon{
+		width: 20%;
+	}
+
+	.main-tel{
+		width: 80%;
+		line-height: 1;
+
+		h6{
+			position: relative;
+			margin-bottom: 15px;
+			font-family: $pdf;
+			font-weight: 300;
+			font-size: 37px;
+
+			&:after{
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 50%;
+				width: 70%;
+				height: 4px;
+				background: $color-yellow;
+			}
+		}
+
+		p{
+			position: relative;
+			font-family: $pdf;
+			font-size: 89px;
+		}
+
+		.tel1:after{
+			content: '';
+			position: absolute;
+			right: 0;
+			top: -30px;
+			width: 4px;
+			height: 120px;
+			background: $color-yellow;
+		}
+		.tel1:before{
+			content: '';
+			position: absolute;
+			bottom: -1px;
+			right: 0;
+			width: 50px;
+			height: 4px;
+			background: $color-yellow;
+		}
+
+		span{
+			display: inline-block;
+			color: $color-blue;
+		}
+	}
+}
+
+// form
+
+.form{
+	position: relative;
+	background: url('../img/form-bg.jpg') no-repeat center top / cover;
+	height: 400px;
+	padding: 40px 0;
+	color: $color-white;
+
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -80px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 80px;
+		background: url('../img/shadow.png') no-repeat center top;
+		pointer-events: none;
+		z-index: 4;
+		opacity: .3;
+	}
+
+	&-text{
+		width: 50%;
+		padding: 0 30px;
+		font-family: $pdf;
+		font-weight: 100;
+		text-align: right;
+		font-size: 50px;
+		line-height: 1;
+	}
+
+	&-title{
+		font-weight: normal;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	&-privacy{
+		text-align: center;
+		font-size: 18px;
+	}
+
+	&-link{
+		width: 50%;
+
+		form{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			> div{
+				width: 100%;
+				margin: 10px 0;
+				padding: 0 10px;
+				text-align: center;
+			}
+
+			> div:nth-child(1), > div:nth-child(2){
+				width: 50%;
+			}
+
+			input, textarea{
+				width: 100%;
+				padding: 16px 10px;
+				font-family: $pdf;
+				font-size: 18px;
+				color: $color-black;
+				background: $color-white;
+				border-radius: 8px;
+				border: 0px;
+			}
+
+			textarea{
+				max-width: 565px;
+			}
+
+			button{
+				display: inline-block;
+				width: 100%;
+				max-width: 330px;
+				padding: 12px 50px;
+				font-family: $pdf;
+				font-size: 28px;
+				text-transform: uppercase;
+				border-radius: 8px;
+				background: linear-gradient(to bottom, rgba(254,231,0,1) 1%,rgba(253,202,0,1) 100%);
+
+				&:hover{
+					background: linear-gradient(to bottom, rgba(253,202,0,1) 1%,rgba(254,231,0,1) 100%);
+				}
+			}
+
+		}
+	}
+}
+
+.pre-footer{
+	padding: 40px 0;
+	background: $color-light-gray;
+
+	.container{
+		overflow: inherit;
+	}
+
+	h4{
+		font-family: $pdf;
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: 22px;
+		padding-bottom: 10px;
+
+	}
+
+	&__list{
+		width: 50%;
+
+		li{
+			position: relative;
+			width: 33%;
+			float: left;
+			padding-left: 10px;
+			line-height: 2;
+
+			&:before{
+				content: '•';
+				position: absolute;
+				left: 0;
+				color: $color-blue;
+			}
+
+			a{
+				color: $color-black;
+				text-decoration: none;
+
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	&__info{
+		width: 50%;
+		align-items: flex-end;
+
+		.text{
+			text-align: center;
+
+			&-title{
+				font-family: $pdf;
+				margin: 20px 0;
+				font-size: 36px;
+				font-weight: 300;
+				text-transform: uppercase;
+			}
+		}
+
+		.count{
+			display: inline-block;
+			font-family: $pdf;
+			font-size: 68px;
+			font-weight: 300;
+			line-height: 1.2;
+			background: $color-yellow;
+			padding: 0 20px;
+			border: 1px solid $color-white;
+			box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+		}
+	}
+
+	.copyright{
+		margin: 30px 0 0;
+		font-family: $roboto;
+		font-weight: 300;
+		text-align: center;
+		font-size: 14px;
+	}
+}
+
+// footer
+.footer{
+	background: $color-blue;
+	padding: 10px 0;
+	text-align: center;
+
+	.container{
+		position: relative;
+		overflow: inherit;
+	}
+
+	&-info{
+		width: 100%;
+		max-width: 900px;
+		margin: auto;
+	}
+
+	p{
+		padding: 0 10px;
+		font-family: $pdf;
+		font-size: 28px;
+		text-transform: uppercase;
+		color: $color-white;
+
+		img{
+			position: relative;
+			top: -6px;
+
+		}
+	}
+
+	.arrow{
+		position: absolute;
+		right: 80px;
+		top: -55px;
+		// transform: translateX(50%);
+	}
+}
+
+
+//      MEDIA
+
+@import "media.scss";

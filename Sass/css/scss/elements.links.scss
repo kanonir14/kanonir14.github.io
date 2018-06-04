@@ -1,0 +1,20 @@
+.btn-enter{
+	min-width: 190px;
+	display: inline-block;
+	padding: 13px 14px;
+	background: #202020;
+	font-family: $text-font;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+
+	&:hover{
+		box-shadow: inset 0px 0px 0px 50px #000;
+	}
+}
